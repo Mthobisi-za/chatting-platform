@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    height: auto;
+}
+body{
+    width: 100%;
+    background-color: #f2e9e4;
+}
+.holder{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #598b89;
+}
+.logo{
+    width: 30%;
+    text-align: center;
+}
+.text{
+    display: flex;
+    width: 50%;
+}
+.actual{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin-top: 5%;
+}
+.logoimg{
+    width: 25%;
+}
+nav{
+    background-color: #c3d6d4;
+    padding: 5%;
+    max-height: 25px;
+    font-size: larger;
+    border-radius: 5%;
+}
+.ah{
+    text-decoration: none;
+    
+}
+.ahh{
+    font-size: 30px;
+}

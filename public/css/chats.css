@@ -1,0 +1,32 @@
+.container{
+    margin-top: 5%;
+}
+.searchbar{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.results{
+    width: 80%;
+    margin: auto;
+    display: block;
+    gap: 5%;
+}
+.profiles{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    background-color: #45678b87;
+}
+img{
+    width: 60%;
+    border-radius: 50%;
+}
+.text{
+    display: block;
+    width: 40%;
+}
+.pic{
+    width: 40%;
+    text-align: center;
+}

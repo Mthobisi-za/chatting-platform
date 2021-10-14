@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/login.css">
+<div class="container">
+    <form action="/login" class="formone" method="POST">
+        <h2 class="headone">Log in to start chatting</h2> <br> <br>
+        <Label for="username">Name: </Label>
+        <input type="text" id="username" required name="username"> <br> <br>
+        <Label for="password">Password : </Label>
+        <input type="text" id="password" required name="password">
+        <br> <br>
+        <div style="text-align: right; width: 50%; margin:auto;">
+            <button type="submit">Login</button>
+        </div>
+        <div class="" >
+            <p>Don't have an acc yet? <button type="button" onclick="signUp()" style="color: blue; font-size:medium">Signup</button></p>
+        </div> <br> <br>
+    </form>
+    <form action="/register" class="formtwo" method="post">
+    <h2 class="headone">Register to start chatting</h2> <br> <br>
+        <Label for="username">Name: </Label>
+        <input type="text" id="username" required name="username"> <br> <br>
+        <Label for="password">Password : </Label>
+        <input type="text" id="password" required name="password">
+        <br> <br>
+        <div style="text-align: right; width: 50%; margin:auto;">
+            <button type="submit">Register</button>
+        </div>
+        <div class="" >
+            <p>Already have an acc? <button type="button" onclick="login()" style="color: blue; font-size:medium">Log In</button></p>
+        </div>
+    </form>
+</div>
+<script src="/js/login.js"></script>

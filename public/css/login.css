@@ -1,0 +1,21 @@
+.container{
+    margin-top: 5%;
+
+}
+.formone,.formtwo{
+    width: 50%;
+    margin: auto;
+}
+label{
+    font-size: large;
+}
+input{
+    width: 50%;
+    font-size: large;
+}
+button{
+    font-size: large;
+}
+.formtwo{
+    display: none;
+}

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/user.css">
+<div class="container">
+    <div class="pict">
+        <img src="{{img}}" alt="">
+    </div>
+   {{#each text}}
+       <div class="textt">
+           <p>{{this.key}} : {{this.data}}</p>
+       </div>
+   {{/each}}
+   <div class="btn"> <br> <br>
+       <button class="btnedit" onclick="makechanges()">Edit Details</button>
+   </div> <br> <br>
+   <form action="/update" method="post" class="form">
+         <h2 class="headone">Update Details</h2> <br> <br>
+        <Label for="username">Name: </Label>
+        <input type="text" id="username" required name="username"> <br> <br>
+        <Label for="password">Password : </Label>
+        <input type="text" id="password" required name="password">
+        <br> <br>
+        <Label for="age">Age: </Label>
+        <input type="number" id="age" required name="age"> <br> <br>
+        <Label for="gender">Gender : </Label>
+        <input type="text" id="gender" required name="gender"> <br> <br>
+        <Label for="contact">Contact : </Label>
+        <input type="text" id="contact" required name="contact"> <br> <br>
+        <Label for="file">Image : </Label>
+        <input type="file" id="file" required> <input type="hidden" name="profile" id="profile"> <br> <br>
+        <div style="text-align: right; width: 50%; margin:auto;">
+            <button type="submit">Submit</button>
+        </div> <br> <br>
+   </form>
+   <div class="space"></div>
+</div>
+<script src="/js/update.js"></script>
