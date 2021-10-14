@@ -81,3 +81,4 @@ function makeProfile(){
     div.addEventListener("click", ()=>{
     console.log(div);
 });
+}
