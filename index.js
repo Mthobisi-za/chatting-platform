@@ -20,7 +20,10 @@ app.post("/login", useFactory.logIn);
 app.post("/register",useFactory.register);
 app.get("/actualChats", useFactory.actualChats);
 app.get("/profile", useFactory.getProfile);
-app.post("/update", useFactory.update)
+app.post("/update", useFactory.update);
+
+//chatting
+app.get("/chats/:id", useFactory.chatting)
 app.listen(PORT, ()=>{
     console.log(">>>....server started on port " + PORT)
 });

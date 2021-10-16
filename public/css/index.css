@@ -1,0 +1,18 @@
+.inside{
+    min-height: 100px;
+    text-align: center;
+}
+.btext{
+    margin-top: 5%;
+}
+.divs{
+    display: flex;
+    gap: 10%;
+    width: 30%;
+    margin: auto;
+    font-weight: bolder;
+}
+button{
+    color: blue;
+    font-weight: bold;
+}

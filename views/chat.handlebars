@@ -1,19 +1,32 @@
 <link rel="stylesheet" href="/css/chats.css">
 <div class="container">
-   <input type="hidden" value="{{users}}" class="data">
+    <input type="hidden" value="{{users}}" class="data">
+    <!-------
     <div class="searchbar">
         <p>Search peoples names!</p> <br>
         <input type="text" placeholder="John" class="changes">
-    </div> <br> <br>
-    <div class="results"> 
-        
+    </div>--->
+    <div class="results">
+        {{#each users}}
+        <div class="profiles">
+            <div class="flex">
+                <div class="pic">
+                    <img src="{{this.profile}}" alt="">
+                </div>
+                <div class="text">
+                    <h2>{{this.username}}</h2> <br>
+                    <p>{{this.age}}</p> <br>
+                    <p>{{this.gender}}</p>
+                </div>
+            </div>
+        <div class="btn">
+           <a href="/chats/{{this.id}}"><button class="inbox">Inbox</button></a> 
+        </div> <br>
+        </div>
+        {{/each}}
     </div>
     <div class="space" style="min-height: 100px;"></div>
 </div>
-
 <script defer src="js/chats.js"></script>
 <script defer>
-   
-    
-    
 </script>

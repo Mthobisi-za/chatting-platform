@@ -30,21 +30,14 @@ module.exports = function factory(){
         if(checker.length > 0){
             error = "User already exist";
         } else{
-            await useDb.setUser(name, password);
+            var profile = "https://idronline.org/wp-content/uploads/2021/01/Screen-Shot-2019-02-19-at-1.23.40-PM-300x300-3.jpg.webp"
+            await useDb.setUser(name, password, profile);
             error = " "
         }
     }
     async function getAllUsers(){
         var users = await useDb.getUsers();
-        var str = [];
-        if(users.length > 0){
-            users.forEach(element =>{
-                var strr = JSON.stringify(element);
-                str.push(strr);
-            })
-        }else{}
-        var fullStr = JSON.stringify(str);
-        return fullStr;
+        return await users;
     }
     async function getProfile(id){
         var user = await useDb.getProfile(id);
@@ -55,12 +48,17 @@ module.exports = function factory(){
             useDb.update(username,password,age,gender,contact,image, id);
         }
     }
+    async function getBothProfiles(userId, friendId){
+        var users = await useDb.getBothProfiles(userId, friendId);
+       return users;
+    }
     return{
         getUser,
         logIn,
         register,
         getAllUsers,
         getProfile,
-        update
+        update,
+        getBothProfiles
     }
 }

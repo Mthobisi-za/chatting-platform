@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -9,20 +12,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Let's connect</title>
 </head>
-    <body>
-       <div class="holder">
-           <div class="logo">
-              <h2 class="h2img"><img class="logoimg" src="/assets/logo.png" alt=""></h2>
-           </div>
-           <div class="text">
-               <div class="empty" style="min-width: 50%; display: flex"></div>
-               <div class="actual">
-                   <nav><a class="ah" href="/">Home</a></nav>
-                   <nav><a class="ah" href="/chat">Chat</a></nav>
-                   <nav><a class="ah ahh" href="/profile"><i class="fas fa-user-circle"></i></a></nav> 
-           </div>
-              </div>
-       </div>
+
+<body>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA9Vco9FBPqZi67twUgjG3HKTLvlrabe_I",
+            authDomain: "let-s-connect-e61ff.firebaseapp.com",
+            projectId: "let-s-connect-e61ff",
+            storageBucket: "let-s-connect-e61ff.appspot.com",
+            messagingSenderId: "216264203555",
+            appId: "1:216264203555:web:1f4d72ebd4f93ea9f38096",
+            measurementId: "G-FD3MVD5206"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig)
+        const db = firebase.firestore();
+        db.settings({ timestampInSnapshots: true });
+    </script>
+    <div class="holder">
+        <div class="logo">
+            <h2 class="h2img"><img class="logoimg" src="/assets/logo.png" alt=""></h2>
+        </div>
+        <div class="text">
+            <div class="empty" style="min-width: 50%; display: flex"></div>
+            <div class="actual">
+                <nav><a class="ah" href="/">Home</a></nav>
+                <nav><a class="ah" href="/chat">Chat</a></nav>
+                <nav><a class="ah ahh" href="/profile"><i class="fas fa-user-circle"></i></a></nav>
+            </div>
+        </div>
+    </div>
+    <div class="emptymap">
         {{{body}}}
-    </body>
+    </div>
+    <div class="png"></div>
+</body>
+
 </html>

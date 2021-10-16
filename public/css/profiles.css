@@ -1,0 +1,60 @@
+.container{
+    min-height: 100px;
+    width: 100%;
+}
+.holders{
+    width: 80%;
+    display: flex;
+    gap: 5%;
+    max-height: 5%;
+    background-color: #65656776;
+    margin: auto;
+    margin-top: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 10px 5px 10px grey;
+}
+.user1{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+.user2{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+img{
+    width: 30%;
+}
+.profile{
+    display: flex;
+    gap: 5%;
+}
+.chats{
+    width: 80%;
+    min-height: 300px;
+    background-color: white;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 5px 10px grey;
+}
+.actualTexts{
+    min-height: 30vh;
+}
+.input{
+    width: 90%;
+    height: auto;
+    text-align: right;
+}
+.inputs{
+    height: 7vh;
+    width: 40%;
+}
+.navli{
+    height: 7vh;
+    font-size: large;
+}

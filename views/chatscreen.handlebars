@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/profiles.css">
+
+<div class="container">
+    <div class="holders">
+                <div class="user1">
+                    <div class="profile">
+                        <img src="{{user1.profile}}"  id="" alt="{{user1.username}}">
+                        <input type="hidden" value="{{user1.id}}" class="users1">
+                        <h2>{{user1.username}}</h2> 
+                     </div>
+                </div>
+                <div class="user2">
+                      <div class="profile">
+                        <img src="{{user2.profile}}" id="" alt="{{user2.username}}">
+                         <input type="hidden" value="{{user2.id}}" class="users2">
+                    <h2>{{user2.username}}</h2>
+                    </div>
+                </div>
+    </div>
+    <div class="chats">
+        <div class="form">
+            <div class="actualTexts">
+
+            </div>
+            <div class="input">
+                <input class="inputs" type="text">
+                <input type="submit" class="navli" value="Submit">
+            </div>
+        </div>
+    </div>
+    <script defer src="/js/letschat.js"></script>
+</div>

@@ -4,7 +4,7 @@ module.exports = function routes() {
     async function chat(req, res) {
       if(req.session.userId){
         var users = await useFactory.getUser();
-        res.render("chat");
+        res.redirect("/actualChats");
       } else{
          res.render("login"); 
       }
@@ -70,7 +70,23 @@ module.exports = function routes() {
     var contact = req.body.contact;
     var image = req.body.profile;
     await useFactory.update(username,password,age,gender,contact,image, id);
-    res.redirect("/profile");
+    setTimeout(()=>{
+      res.redirect("/profile");
+    },100);
+  }
+  async function chatting(req,res){
+    req.session.userId = 7;
+    var userId = req.session.userId;
+    var friendId = req.params.id;
+    if(userId && friendId ){
+      var users = await useFactory.getBothProfiles(userId, friendId);
+      var user1 = users.friendUser;
+      var user2 = users.mainUser;
+      res.render("chatscreen", {user1,user2});
+      //res.redirect("/actualChats")
+    } else{
+      res.redirect("/actualChats");
+    }
   }
   return {
     chat,
@@ -79,6 +95,7 @@ module.exports = function routes() {
     register,
     actualChats,
     getProfile,
-    update
+    update,
+    chatting
   };
 };

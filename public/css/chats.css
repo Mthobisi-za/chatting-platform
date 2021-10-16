@@ -13,13 +13,19 @@
     gap: 5%;
 }
 .profiles{
-    display: flex;
     margin-top: 5%;
     width: 100%;
-    background-color: #45678b87;
+    min-height: 200px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+}
+.flex{
+    width: 100%;
+    display: flex;
 }
 img{
-    width: 60%;
+    margin-top: 10px;
+    width: 40%;
     border-radius: 50%;
 }
 .text{
@@ -29,4 +35,16 @@ img{
 .pic{
     width: 40%;
     text-align: center;
+}
+.btn{
+    text-align: right;
+    margin-right: 50px;
+   
+}
+.inbox{
+    background-color: #1A8FDD;
+    border-radius: 30px;
+    width: 133px;
+    height: 34px;
+    border: 2px #1A8FDD;
 }
