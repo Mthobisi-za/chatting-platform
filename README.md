@@ -1,6 +1,6 @@
 # Let's Connect Chatting Platform
 
-### App link <a href="">here</a> 
+### App link <a href="https://lets-connect-chat-app.herokuapp.com/">here</a> 
 
 ### About The Web App
 
@@ -14,7 +14,7 @@ Let's connect is a web chatting platform designed to be simple to use, With simp
 ## The designs
 The layouts's design is as simple as it can get. Users are able to easly navigate through the platform.
 
-Link to figma <a href=""> design </a>
+Link to figma <a href="https://www.figma.com/file/Clqqo97VVyHIEX2wgA8Z13/Untitled?node-id=0%3A1"> design </a>
 
 ## The home page
 - Users must be able to log in or register
